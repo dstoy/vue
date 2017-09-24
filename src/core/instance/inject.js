@@ -58,9 +58,9 @@ export function resolveInject (inject: any, vm: Component): ?Object {
         }
         source = source.$parent
       }
-      if (process.env.NODE_ENV !== 'production' && !source) {
-        warn(`Injection "${key}" not found`, vm)
-      }
+      // if (process.env.NODE_ENV !== 'production' && !source) {
+      //   warn(`Injection "${key}" not found`, vm)
+      // }
     }
     return result
   }
