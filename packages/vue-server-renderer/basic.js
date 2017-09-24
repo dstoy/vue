@@ -6779,9 +6779,9 @@ function resolveInject (inject, vm) {
         }
         source = source.$parent;
       }
-      if ("development" !== 'production' && !source) {
-        warn(("Injection \"" + key + "\" not found"), vm);
-      }
+      // if ("development" !== 'production' && !source) {
+      //   warn(`Injection "${key}" not found`, vm)
+      // }
     }
     return result
   }

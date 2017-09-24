@@ -1,5 +1,5 @@
 /*!
- * Vue.js v2.4.4
+ * Vue.js v2.4.4-m
  * (c) 2014-2017 Evan You
  * Released under the MIT License.
  */
@@ -3485,9 +3485,9 @@ function resolveInject (inject, vm) {
         }
         source = source.$parent;
       }
-      if (process.env.NODE_ENV !== 'production' && !source) {
-        warn(("Injection \"" + key + "\" not found"), vm);
-      }
+      // if (process.env.NODE_ENV !== 'production' && !source) {
+      //   warn(`Injection "${key}" not found`, vm)
+      // }
     }
     return result
   }
@@ -4720,7 +4720,7 @@ Object.defineProperty(Vue$3.prototype, '$ssrContext', {
   }
 });
 
-Vue$3.version = '2.4.4';
+Vue$3.version = '2.4.4-m';
 
 /*  */
 
